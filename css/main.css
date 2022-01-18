@@ -104,11 +104,7 @@ textarea {
 
   body {
     color: var(--light-color);
-    max-width: 1200px;
     min-width: fit-content;
-    padding-left: 20px;
-    padding-right: 20px;
-    width: 90%;
   }
 
   .container {
@@ -171,25 +167,29 @@ textarea {
     flex-direction: column;
   }
 
-  header nav,
-  header .logo {
-    width: 100%;
-  }
-
-  header .logo {
-    border-bottom: 1px solid var(--light-color);
+  header .header-container {
+    display: flex;
+    flex-direction: column;
     padding: 10px 0;
     text-align: center;
   }
 
+  header .logo {
+    border-bottom: 1px solid var(--light-color);
+    padding-bottom: 10px;
+    width: 100%;
+  }
+
   header nav ul {
+    display: flex;
+    flex-direction: row wrap;
     justify-content: space-between;
   }
 
   header nav ul li {
-    padding: 20px 25px;
     font-weight: bold;
     text-transform: uppercase;
+    padding: 10px 20px;
   }
 
   /*************************** HERO ***************************************/
@@ -254,7 +254,7 @@ textarea {
   /*************************** FEATURES ***********************************/
   
   #features {
-    background-image: url("img/features-background.png");
+    background-image: url("img/features-background.png") no-repeat center center fixed;
     background-color: var(--dark-color);
     padding: 50px 20px;
   }
@@ -442,10 +442,163 @@ textarea {
 
 @media only screen and (min-width: 500px) {
   
-  body {
+  .container {
     padding-left: 30px;
     padding-right: 30px;
   }
+
+  #form  {
+    text-align: center;
+  }
+
+  input {
+    max-width: 50%;
+  }
+
+}
+
+@media only screen and (min-width: 768px) {
+
+  .container {
+    padding-left: 60px;
+  }
+
+/* Header Tablet Styles */
+
+  header .container {
+    flex-direction: row;
+    justify-content: space-between;
+    padding-right: 60px;
+    padding-left: 60px;
+  }
+
+  header .header-container {
+    flex-direction: row;
+    text-align: left;
+  }
+
+  header .logo {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+
+  header nav ul li {
+    padding: 0 0 0 30px;
+  }
+
+  #hero h1 {
+    padding-left: 0;
+  }
+
+  /* Aside/Form Tablet Styles */
+
+  #form .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+    gap: 40px;
+    text-align: left;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  #form input {
+    max-width: 100%;
+  }
+
+  /* Features Tablet Styles */
+
+  #features {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  #features .container {
+    flex-direction: row wrap;
+  }
+
+  #features .feature-grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: start;
+    gap: 20px;
+    width: 100%;
+  }
+
+  #features .feature-item-container {
+    padding: 0 30px;
+  }
+
+  #features p {
+    text-align: center;
+  }
+
+  /* Reviews Tablet Styles */
+
+  #reviews .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  #reviews .reviews-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: start;
+    align-items: start;
+    gap: 40px;
+  }
+
+  #reviews img {
+    margin: 0;
+    padding-bottom: 20px;
+  }
+
+  #reviews .review-image {
+    grid-column: 1;
+    grid-row: 2; 
+  }
+
+  #reviews .review-text {
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+/* Contact Tablet Styles */
+
+  #contact-section .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    justify-content: center;
+    align-items: start;
+    padding: 90px 0 50px 0;
+  }
+
+}
+
+@media only screen and (min-width: 1200px) {
+
+  }
+
+  /*
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  } */
+
+  /* Header and Hero Desktop Styles */
+
+
+
+  /* Aside/Form Desktop Styles */
+
+  /* Features Desktop Styles */
+
+  /* Reviews Desktop Styles */
+
+  /* Contact Section Desktop Styles */
 
 }
 

@@ -31,13 +31,13 @@
 
 <body>
   <!-- HEADER -->
-  <header class="container">
-    <header class="container flex">
+  <header class="outer">
+    <header class="header-container container flex">
       <div class="logo">
         <img src="img/logo.png" alt="Unplugged logo">
       </div>
       <nav>
-        <ul class="flex">
+        <ul class="flex nav-flex">
           <li><a href="about/index.html">About</a></li>
           <li><a href="faq/index.html">FAQ</a></li>
         </ul>
@@ -47,7 +47,7 @@
 
   <!-- HERO -->
 
-  <section id="hero">
+  <section id="hero" class="outer">
     <div class="container">
       <h1>Retreat from the desk, return refreshed</h1>
     </div>
@@ -55,8 +55,8 @@
 
   <!-- ASIDE / FORM -->
 
-  <aside id="form">
-    <div class="container grid">
+  <aside id="form" class="outer">
+    <div class="container grid inner">
       <div class="form-description">
         <h3>Want to join the next retreat?</h3>
         <p>Find out when we are holding our next retreat and how your company or team can sign up!</p>
@@ -73,7 +73,7 @@
 
   <section id="features">
     <h2>Have the work week you always dreamed of &ndash; without the bad wifi.</h2>
-    <div class="container">
+    <div class="container inner">
       <div class="feature-grid grid">
         <div class="feature-item-container">
           <i class="fas fa-campground fa-3x"></i>
@@ -106,21 +106,29 @@
   <!-- REVIEWS -->
 
   <section id="reviews">
-    <div class="container">
-      <h2>Be a better team in 5 days, like this one.</h2>
-      <img src="img/team.png" alt="happy team">
-      <h3>LaCrue Bottling Company<br>October 2019</h3>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-        Eos consequatur, aliquam molestiae pariatur deleniti delectus velit rerum. 
-        Ipsum, dolorum enim nobis inventore consequatur dolorem deleniti ratione beatae? 
-        Doloremque, laudantium alias.</p>
+    <div class="container inner">
+      <h2 class="span-2">Be a better team in 5 days, like this one.</h2> 
+      <div class="grid reviews-grid">
+        <div class="review-image">
+          <img src="img/team.png" alt="happy team">
+        </div>
+        <div class="review-text">
+          <h3>LaCrue Bottling Company<br>October 2019</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+          Eos consequatur, aliquam molestiae pariatur deleniti delectus velit rerum. 
+          Ipsum, dolorum enim nobis inventore consequatur dolorem deleniti ratione beatae? 
+          Doloremque, laudantium alias.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+          Eos consequatur, aliquam molestiae pariatur deleniti delectus velit rerum.</p>
+        </div>
+      </div>
     </div>
   </section>
 
   <!-- CONTACT -->
 
   <section id="contact-section">
-    <div class="container grid">
+    <div class="container grid inner">
       <div class="contact-content">
         <h3>Contact</h3>
         <address class="contact-content">
@@ -142,11 +150,10 @@
   <!-- FOOTER -->
 
   <footer>
-    <div class="container">
+    <div class="container inner">
       <p>Copyright 2022 | Unplugged</p>
     </div>
   </footer>
-
 
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>
