@@ -14,124 +14,139 @@
 
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
-  <!-- Place favicon.ico in the root directory -->
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" 
+    integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <meta name="theme-color" content="#fafafa">
 </head>
 
 <body>
-
-  <!-- Header Content -->
-  <header>
-    <div class="header-container">
-        <figure>
-          <img src="img/logo.png" alt="Unplugged logo">
-        </figure>
-        <nav>
-          <ul>
-            <li><a href="about/index.html">About</a></li>
-            <li><a href="faq/index.html">FAQ</a></li>
-          </ul>
-        </nav>
-    </div>
+  <!-- HEADER -->
+  <header class="container">
+    <header class="container flex">
+      <div class="logo">
+        <img src="img/logo.png" alt="Unplugged logo">
+      </div>
+      <nav>
+        <ul class="flex">
+          <li><a href="about/index.html">About</a></li>
+          <li><a href="faq/index.html">FAQ</a></li>
+        </ul>
+      </nav>
+    </header>
   </header>
 
-  <!-- Main HomePage Content -->
-  <main>
+  <!-- HERO -->
 
-    <!-- Form Aside -->
-    <aside>
-      <div class="form-container">
-        <div class="form-description">
-          <h3>Want to join the next retreat?</h3>
-          <p>Find out when we are holding our next retreat and how your company or team can sign up!</p>
-        </div>
-        <div class="form">
-          <h3>Find out more</h3>
-          <!--email form -->
-          <!--button-->
-        </div>
+  <section id="hero">
+    <div class="container">
+      <h1>Retreat from the desk, return refreshed</h1>
+    </div>
+  </section>
+
+  <!-- ASIDE / FORM -->
+
+  <aside id="form">
+    <div class="container grid">
+      <div class="form-description">
+        <h3>Want to join the next retreat?</h3>
+        <p>Find out when we are holding our next retreat and how your company or team can sign up!</p>
       </div>
-    </aside>
-
-    <!-- Features Content -->
-    <section class="features">
-      <div class="features-container">
-        <h2>Have the work week you always dreamed of &ndash; without the bad wifi.</h2>
-        <div class="feastures-items-container">
-          <article class="features-item">
-            <!-- icon -->
-            <p>Located in a peaceful bungalow outside of Lake Geneva, Wisconsin.</p>
-          </article>
-          <article class="features-item">
-            <!-- icon -->
-            <p>12 private rooms with ensuite bathrooms, 2 group meeting rooms, and 4 breakout rooms.</p>
-          </article>
-          <article class="features-item">
-            <!-- icon -->
-            <p>Private chef team providing on demand meals - just like your team kitchen.</p>
-          </article>
-          <article class="features-item">
-            <!-- icon -->
-            <p>5 outdoor obstacle courses, including private beach &frac12; mile from bungalow.</p>
-          </article>
-          <article class="features-item">
-            <!-- icon -->
-            <p>Retreat facilitator to manage your day to day activities so you all get a chance to reset.</p>
-          </article>
-          <article class="features-item">
-            <!-- icon -->
-            <p>Dedicated computer room for times that you must wifi.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- Reviews Content -->
-    <section class="reviews">
-      <div class="reviews-container">
-        <h2>Be a better team in 5 days, like this one.</h2>
-        <div class="review-content-container">
-          <img src="img/team.png" alt="team outdoors">
-          <h3>LaCrue Bottling Co.<br>October 2020</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
-            ut labore et dolore magna aliqua. Nulla pharetra diam sit amet nisl suscipit adipiscing bibendum. 
-            Arcu non odio euismod lacinia at. Amet mattis vulputate enim nulla aliquet porttitor. 
-            Integer feugiat scelerisque varius morbi enim nunc. Augue ut lectus arcu bibendum at varius vel pharetra vel.</p>
-        </div>
-      </div>
-    </section>
-
-  </main>
-
-  <!-- Footer Content -->
-  <footer>
-    <div class="footer-container">
-      <div class="footer-content">
-        <div class="contact-info">
-          <h3>Contact</h3>
-          <address>
-            <p>555-555-5555
-            <br>hello@unplugged.com</p>
-          </address>
-        </div>
-        <div class="social">
-          <h3>Social</h3>
-          <!-- Add social media icons -->
-        </div>
-      </div>
-      <div class="copyright">
-        <p>Copyright 2022 | Unplugged</p>
+      <div class="form">
+        <h3>Find out more</h3>
+        <input class="text-input" type="text" name="name" value="name@email.com">
+        <input class="btn" type="button" value="Download Itinerary">
       </div>
     </div>
+  </aside>
+
+  <!-- FEATURES -->
+
+  <section id="features">
+    <h2>Have the work week you always dreamed of &ndash; without the bad wifi.</h2>
+    <div class="container">
+      <div class="feature-grid grid">
+        <div class="feature-item-container">
+          <i class="fas fa-campground fa-3x"></i>
+          <p>Located in a peaceful bungalow outside of Lake Geneva, Wisconsin.</p>
+        </div>
+        <div class="feature-item-container">
+          <i class="fas fa-bed fa-3x"></i>
+          <p>12 private rooms with ensuite bathrooms, 2 group meeting rooms, and 4 breakout rooms.</p>
+        </div>
+        <div class="feature-item-container">
+          <i class="fas fa-utensils fa-3x"></i>
+          <p>Private chef team providing on demand meals - just like your team kitchen.</p>
+        </div>
+        <div class="feature-item-container">
+          <i class="fas fa-shoe-prints fa-3x"></i>
+          <p>5 outdoor obstacle courses, including private beach &frac12; mile from bungalow.</p>
+        </div>
+        <div class="feature-item-container">
+          <i class="fas fa-smile fa-3x"></i>
+          <p>Retreat facilitator to manage your day to day activities so you all get a chance to reset.</p>
+        </div>
+        <div class="feature-item-container">
+          <i class="fas fa-wifi fa-3x"></i>
+          <p>Dedicated computer room for times that you must wifi.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- REVIEWS -->
+
+  <section id="reviews">
+    <div class="container">
+      <h2>Be a better team in 5 days, like this one.</h2>
+      <img src="img/team.png" alt="happy team">
+      <h3>LaCrue Bottling Company<br>October 2019</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Eos consequatur, aliquam molestiae pariatur deleniti delectus velit rerum. 
+        Ipsum, dolorum enim nobis inventore consequatur dolorem deleniti ratione beatae? 
+        Doloremque, laudantium alias.</p>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+
+  <section id="contact-section">
+    <div class="container grid">
+      <div class="contact-content">
+        <h3>Contact</h3>
+        <address class="contact-content">
+            <p>555-555-5555</p>
+            <p>hello@unplugged.com</p>
+        </address>
+      </div>
+      <div class="social-content">
+        <h3>Social</h3>
+        <div class="social-icons">
+          <i class="fab fa-facebook"></i>
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-instagram"></i>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+
+  <footer>
+    <div class="container">
+      <p>Copyright 2022 | Unplugged</p>
+    </div>
   </footer>
+
 
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>
@@ -143,6 +158,7 @@
     ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
   </script>
   <script src="https://www.google-analytics.com/analytics.js" async></script>
+
 </body>
 
 </html>
